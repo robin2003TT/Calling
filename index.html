@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigeon Call</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Incoming Call Screen -->
+    <div id="call-screen">
+        <audio id="ringtone" src="ringtone.mp3" loop></audio>
+        <div class="caller">
+            <img src="pigeon_call.jpg" id="caller-photo" alt="Pigeon">
+            <p>Incoming Call</p>
+            <h1>Pigeon</h1>
+        </div>
+        <div class="buttons">
+            <button id="decline" class="btn red">Decline</button>
+            <button id="answer" class="btn green">Answer</button>
+        </div>
+    </div>
+
+    <!-- Video Call Screen -->
+    <div id="video-screen" class="hidden">
+        <video id="pigeon-video" src="video.mp4" autoplay playsinline></video>
+    </div>
+
+    <!-- Jumpscare Screen -->
+    <div id="jumpscare-screen" class="hidden">
+        <audio id="jumpscare-audio" src="pigeon.mp3"></audio>
+        <img id="jumpscare-image" src="jumpscare.jpg" alt="Jumpscare">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
